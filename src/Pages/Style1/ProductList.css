@@ -1,0 +1,75 @@
+body{
+
+    color: white;
+}
+
+.container.main-content {
+    min-height: 100%; /* Ensure the container takes the full height of the viewport */
+    background-color:cyan;
+}
+
+.card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top{
+    height: 250px;
+    object-fit:contain;
+
+}
+
+.card-body{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title,.card-text{
+    margin-bottom: 20px;
+}
+
+.card,.btn{
+    margin-top: auto;
+    display: inline-block;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: white;
+}
+
+.card-img-top{
+    transition: transform 0.3 ease;
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.05);
+}
+
+.card-title,.card-text,.btn{
+    transition: none;
+    color: inherit;
+}
+
+.btn-primary{
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 97%;
+    margin-left: auto;
+}
+
+.btn-primary:hover{
+    background-color: #0056b3;
+    border-color: #004085;
+}

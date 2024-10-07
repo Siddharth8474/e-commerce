@@ -1,0 +1,9 @@
+.navbar-nav {
+    padding: 8px 15px;
+    align-items: end;
+}
+
+.navbar-toggler {
+    border: none; /* Remove border from the toggle button */
+  }
+  
